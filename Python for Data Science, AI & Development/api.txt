@@ -1,0 +1,12 @@
+curl -V
+
+curl -X POST --user "apikey:{apikey}" \
+--header "Content-Type: application/json" \
+--data '{"text": ["Hello, world.", "How are you?"], "model_id":"en-es"}' \
+"{url}/v3/translate?version=2018-05-01"
+
+curl -X POST --user "apikey:{apikey}" \
+--header "Content-Type: text/plain" \
+--data "Language Translator translates text from one language to another" \
+"{url}/v3/identify?version=2018-05-01"
+
